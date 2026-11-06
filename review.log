@@ -1,0 +1,8 @@
+review-log-version: 1
+repository: TurtleMcTurtle/ruvnet
+
+[2026-11-06T00:18:00Z] START run=dependency-20261106 mode=incremental branch=codex/dependabot-freshness-test reviewed-input=5ca913cb6db27211bd1248a02c765aa557f598f6 baseline=none scope=plugins/ruvnet dependency validation
+[2026-11-06T00:18:00Z] FAIL id=TEST-FRESHNESS path=plugins/ruvnet/test/core.test.mjs evidence=npm-run-check finding=dispatch test assumes a current provenance snapshot against wall clock; existing snapshot expires after 72h
+[2026-11-06T00:18:00Z] FIX id=TEST-FRESHNESS action=mock Date only within current-snapshot dispatch test and add explicit stale-snapshot dispatch coverage
+[2026-11-06T00:18:00Z] PASS id=TEST-FRESHNESS check=npm-ci-and-npm-run-check result=16-tests-pass-plus-validation-and-benchmark-gates
+[2026-11-06T00:18:00Z] COMPLETE run=dependency-20261106 coverage=plugins/ruvnet/test/core.test.mjs result=pass reviewed-input=5ca913cb6db27211bd1248a02c765aa557f598f6 unresolved=none scope-limit=not-a-whole-repository-audit
